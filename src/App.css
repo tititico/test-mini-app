@@ -1,0 +1,86 @@
+/* 全局背景 */
+.App {
+  font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(135deg, #f7f9fc 0%, #eef2f7 100%);
+  color: #2c3e50;
+}
+
+/* 卡片容器 */
+.card {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 32px 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 82%;
+  max-width: 360px;
+}
+
+/* 标题 */
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* 提示文字 */
+.status-text {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* 错误提示 */
+.error-text {
+  font-size: 13px;
+  margin-top: 12px;
+  color: #d9534f;
+  word-break: break-all;
+}
+
+/* Loading 动画 */
+.loader {
+  margin: 18px auto;
+  border: 4px solid #f0f0f0;
+  border-top: 4px solid #4caf50; /* LINE绿色风格 */
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  animation: spin 0.9s linear infinite;
+}
+
+/* 动画关键帧 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Documentation 链接样式 */
+.doc-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #2c7be5;
+  text-decoration: none;
+}
+
+.doc-link:hover {
+  text-decoration: underline;
+}
